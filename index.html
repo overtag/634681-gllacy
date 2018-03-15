@@ -11,17 +11,18 @@
   				<img src="img/index-logo.svg" width="368" height="153" alt="Логотип Gllasy">
   			</a>
 	  		<ul class="site-navigation">
-	  			<li><a href="info.html">Каталог</a></li>
-	  			<li><a href="news.html">Доставка и оплата</a></li>
-	  			<li><a href="price.html">О Компании</a></li>
+	  			<li><a href="catalog.html">Каталог</a></li>
+	  			<li><a href="shippingAndPayment.html">Доставка и оплата</a></li>
+	  			<li><a href="compayInfo.html">О Компании</a></li>
 	  		</ul>
 	  		<ul class="user-navigation">
 	  			<li class="login-link">Вход</li>
 	  			<li class="basket-link">Корзина</li>
 	  		</ul>
   		</nav>
-  		<section class="catalog">
-  			<h2>Форма каталога</h2>
+  		<div class="catalog">
+  			<!-- Здесь будет форма -->
+  			<h2>Каталог</h2>
   			<ul class="site-navigation">
 	  			<li>Новинки</li>
 	  			<li>Сливочное</li>
@@ -29,15 +30,18 @@
 	  			<li>Фруктовый лед</li>
 	  			<li>Мелорин</li>
 	  		</ul>
-  		</section>
+  		</div>
   		<section class="authorization">
   			<h2 class="visually-hidden">Авторизации</h2>
+  			<!-- Здесь будет форма -->
   		</section>
   		<section class="search">
   			<h2 class="visually-hidden">Поиск</h2>
+  			<!-- Здесь будет форма -->
   		</section>
   		 <section class="basket">
   			<h2 class="visually-hidden">Корзина</h2>
+  			<!-- Здесь будет форма -->
   		</section>
   	</header>
   	<main class="container">
@@ -71,31 +75,25 @@
   				</li>
   			</ul>
   		</section>
+  		<section class="action">
+	  		<div class="action-raspberry">
+	  			<h2>Малинка даром!</h2>
+	  			<p>	
+					При покупке 2 кг любого фруктового мороженого, 
+					добавим в ваш заказ банку малинового варенья бесплатно.
+	  			</p>
+	  			<a class="button" href="news.html">Хочу варенье!</a>	
+	 		</div>
 
-  		<section class="action-raspberry">
-  			<h2>Малинка даром!</h2>
-  			<p>	
-				При покупке 2 кг любого фруктового мороженого, 
-				добавим в ваш заказ банку малинового варенья бесплатно.
-  			</p>
-  			<span>
-				<img src="img" alt=" ">
-				<b>Хочу варенье!</b>
-			</span>
- 		</section>
-
-  		<section class="action-chocolate">
-  			<h2>Шоколадки даром!</h2>
-  			<p>	
-				При покупке 2 кг пломбира, добавим в ваш заказ упаковку
-				вкуснейшей шоколадной присыпки  совершенно бесплатно.
-			</p>
-			<span>
-				<img src="img" alt=" ">
-				<b>Хочу шоколадки!</b>
-			</span>
+	  		<div class="action-chocolate">
+	  			<h2>Шоколадки даром!</h2>
+	  			<p>	
+					При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+					вкуснейшей шоколадной присыпки  совершенно бесплатно.
+				</p>
+				<a class="button" href="news.html">Хочу шоколадки!</a>	
+  			</div>
   		</section>
-
   		<section class="product">
   			<h2 class="visually-hidden">Витрина</h2>
   			<ul>
@@ -159,44 +157,44 @@
 				в курсе всего самого вкусного, что у нас происходит.
 				Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
   			</p>
-  			<span>
-  				<img src="img" alt=" ">
-  				<b>Отправить</b>
-  			</span>
+  			<a class="button" href="news.html">Отправить</a>		
   		</section>
   		<section class="contacts">
   			<h2>Контакты</h2>
   			<p>
 				Адрес главного офиса и офлайн-магазина:
 				<br>
-				ул. Большая Конюшенная 19/8, Санкт-Петербург
+				ул. Большая Конюшенная 19/8, Санкт-Петербург	
+			</p>
+			<p>
 				Для заказов по телефону:
 				<br>
 				8 812 450-25-25
 				<br>
 				(с 10 до 20 ежедневно)
 			</p>
-			<span>
-				<img src="img" alt=" ">
-				<b>Форма обратной связи</b>
-			</span>
+			<a class="button" href="news.html">Форма обратной связи</a>	
 		</section>
 		<section class="map">
 			<h2 class="visually-hidden">Расположение на карте</h2>
+			<!-- Здесь будет форма -->
 		</section>
 		<section class="feedback">
 			<h2 class="visually-hidden">Задать вопрос</h2>
+			 <!-- Здесь будет форма -->
 		</section>
 	</main>	
-	<footer>
-			<section class="footer-social">
+
+	<footer class="main-footer">
+		<section class="footer-social">
 			<h2>Давайте дружить!</h2>
 			<ul>
 				<li><a class="social-button" href="#">Вконтакте</a></li>
 				<li><a class="social-button" href="#">Фейсбук</a></li>
 				<li><a class="social-button" href="#">Инстаграм</a></li>
 			</ul>
-			</section>
+		</section>
+
 		<nav class="main-navigation">
 			<a class="main-header-logo">
 				<img src="img" alt=" ">
@@ -211,7 +209,8 @@
 				<li class="login-link">Вход</li>
 			</ul>
 		</nav>
-			<section class="footer-copyright">
+
+		<section class="footer-copyright">
 			<h2>Разработано</h2> 
 			<b>Сделано в HTML Academy © 2017</b>
 			<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
