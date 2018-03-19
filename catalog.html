@@ -5,68 +5,80 @@
     <title>Gllasy Shop</title>
   </head>
   <body>
-  	<header class="main=header">
+  	<header class="main-header">
   		<nav class="main-navigation">
   			<a class="main-header-logo">
   				<img src="img/logo.svg" width="154" height="64" alt="Логотип Gllasy">
   			</a>
-	  		<ul class="site-navigation">
-	  			<li><a href="catalog.html">Каталог</a></li>
-	  			<li><a href="shippingAndPayment.html">Доставка и оплата</a></li>
-	  			<li><a href="compayInfo.html">О Компании</a></li>
-	  		</ul>
-	  		<ul class="user-navigation">
-	  			<li class="login-link">
-					<a class="login-link" href="login.html">Вход</a>
+  			
+	  		<ul class="main-header-menu">
+	  			<li class="main-header-menu-submenu">
+	  				<a href="#" class="header-menu-catalog">Каталог</a>
+	  				<ul class="header-menu-catalog-submenu">
+							<li><a href="#">Новинки</a></li>
+							<li><a href="catalog.html">Сливочное</a></li>
+							<li"><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лед</a></li>
+							<li><a href="#">Мелорин</a></li>
+					</ul>
 	  			</li>
-	  			<li class="basket-link">
-	  				<a class="basket-link" href="login.html">Корзина</a>
+
+	  			<li class="main-header-menu-delivey">
+	  				<a href="#">Доставка и оплата</a>
+	  			</li>
+
+	  			<li class="main-header-menu-company">
+	  				<a href="">О Компании</a>
+	  			</li>
+	  		</ul>
+
+	  		<ul class="header-user-navigation">
+	  			<li class="header-user-navigation-search">
+	  				<a href="#"> <span class="visibility-hidden">Поиск</span></a>
+	  				<form class="header-user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
+						<label for="search-string" class="visibility-hidden">Поиск по сайту</label> 
+						<input type="search-string"  placeholder="Что ищем?" name="search">
+					</form>
+	  			<li>
+
+	  			<li class="header-user-navigation-login">
+					<a class="header-user-navigation-login-link" href="login.html">Вход</a>
+
+					<form class="header-user-navigation-login-form" method="post" action="https://echo.htmlacademy.ru">
+						<fieldset>
+							<legend class="visibility-hidden">Вход</legend>
+							<p>
+								<label for="user-login">Логин</label>
+								<input id="user-login" type="text" name="login" placeholder="Логин">
+							</p>
+							<p>
+								<label for="user-password">Пароль</label>
+								<input id="user-password" type="password" name="password" placeholder="Пароль"> 
+							</p>
+							
+							<button type="submit">Войти</button>
+							<a href="example.html">Забыли пароль?</a>
+							<a href="example.html">Новая регистрация</a>
+						</fieldset>
+					</form>
+	  			</li>
+
+	  			<li class="header-user-navigation-login-basket">
+	  				<a class="header-user-navigation-login-basket-link" href="login.html">Корзина</a>
+
+					<form class="header-user-navigation-login-basket-form" action="https://echo.htmlacademy.ru" method="post">
+						<fieldset>
+							<legend class="visibility-hidden">Список товаров</legend>
+							<output name="basket-orders"></output>
+						</fieldset>
+						<button type="submit" class="main-header-user-basket-button">Оформить заказ</button>
+					</form> 					
 	  			</li>
 	  		</ul>
   		</nav>
-
-  		<form class="catalog" method="post" action="https://echo.htmlacademy.ru">
-			<label for="catalog-select" class="visually-hidden">Каталог</label>
-			<select id="catalog-select" class="catalog-select" multiple size="5">
-				<option value="New items">Новинки</option>
-				<option value="Creamy">Сливочное</option>
-				<option value="Shcherbety">Щербеты</option>
-				<option value="Fruit ice">Фруктовый лед</option>
-				<option value="Melorin">Мелорин</option>
-			</select>
-		</form>
-
-		<form class="user" method="post" action="https://echo.htmlacademy.ru">
-			<fieldset>
-				<legend class="visually-hidden">Вход</legend>
-				<p>
-					<label for="user-login">Логин</label>
-					<input id="user-login" type="text" name="login" placeholder="Логин">
-				</p>
-				<p>
-					<label for="user-password">Пароль</label>
-					<input id="user-password" type="password" name="password" placeholder="Пароль"> 
-				</p>
-				
-				<button type="submit">Войти</button>
-				<a href="example.html">Забыли пароль?</a>
-				<a href="example.html">Новая регистрация</a>
-			</fieldset>
-		</form>
-
-		<form class="basket" action="https://echo.htmlacademy.ru" method="post">
-			<fieldset>
-				<legend class="visually-hidden">Список товаров</legend>
-				<output name="basket-orders"></output>
-			</fieldset>
-			<button type="submit" class="basket-button">Оформить заказ</button>
-		</form> 
-
-		<form class="search" action="https://echo.htmlacademy.ru" method="post">
-			<label for="search-form">Поиск</label> 
-			<input type="search-form"  placeholder="Что ищем?" name="search">
-		</form> 
   	</header>
+
+  	
   	<main class="container">
   		<h1 class="page-title">Сливочное мороженое</h1>
 
@@ -78,7 +90,7 @@
 
 		<form class="filters" method="post" action="https://echo.htmlacademy.ru">
 			<fieldset>
-				<legend class="visually-hidden">Фильтры</legend>
+				<legend class="visibility-hidden">Фильтры</legend>
 				<p>
 					<label for="filters-sort" name="" class="filters-sort">Сортировка</label>
 					<select id="filters-sort">
@@ -153,7 +165,7 @@
 		</form>		
 
   		 <section class="catalog">
-  		 	<h2 class="visually-hidden">Каталог мороженого</h2>
+  		 	<h2 class="visibility-hidden">Каталог мороженого</h2>
   			<ul>
 				<li>
 					<a href="catalog-item.html">
@@ -274,7 +286,7 @@
 			</ul>
 		</nav>
 		<section class="footer-copyright">
-			<h2 class="visually-hidden">Разработано</h2>
+			<h2 class="visibility-hidden">Разработано</h2>
 			<img src="img/logo-htmlacademy.svg" width="108" height="39" alt=" ">
 			<b>Сделано в HTML Academy © 2017</b>
 			<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
