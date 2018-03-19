@@ -5,30 +5,67 @@
     <title>Gllasy Shop</title>
   </head>
   <body>
-  	<header class="main=header" >
+  	<header class="main=header">
   		<nav class="main-navigation">
-  			<a class="main-header-logo" href="index.html">
-  				<img src="img/index-logo.svg" width="368" height="153" alt="Логотип Gllasy">
+  			<a class="main-header-logo">
+  				<img src="img/logo.svg" width="154" height="64" alt="Логотип Gllasy">
   			</a>
-  		<ul class="site-navigation">
-  			<li><a href="info.html">Каталог</a></li>
-  			<li><a href="news.html">Доставка и оплата</a></li>
-  			<li><a href="price.html">О Компании</a></li>
-  		</ul>
-  		<ul class="user-navigation">
-  			<li class="login-link">Вход</li>
-  			<li class="basket-link">Корзина</li>
-  		</ul>
-  		</nav>  
-  		<section class="authorization">
-  			<h2 class="visually-hidden">Авторизации</h2>
-  		</section>
-  		<section class="search">
-  			<h2 class="visually-hidden">Поиск</h2>
-  		</section>
-  		 <section class="basket">
-  			<h2 class="visually-hidden">Корзина</h2>
-  		</section>
+	  		<ul class="site-navigation">
+	  			<li><a href="catalog.html">Каталог</a></li>
+	  			<li><a href="shippingAndPayment.html">Доставка и оплата</a></li>
+	  			<li><a href="compayInfo.html">О Компании</a></li>
+	  		</ul>
+	  		<ul class="user-navigation">
+	  			<li class="login-link">
+					<a class="login-link" href="login.html">Вход</a>
+	  			</li>
+	  			<li class="basket-link">
+	  				<a class="basket-link" href="login.html">Корзина</a>
+	  			</li>
+	  		</ul>
+  		</nav>
+
+  		<form class="catalog" method="post" action="https://echo.htmlacademy.ru">
+			<label for="catalog-select" class="visually-hidden">Каталог</label>
+			<select id="catalog-select" class="catalog-select" multiple size="5">
+				<option value="New items">Новинки</option>
+				<option value="Creamy">Сливочное</option>
+				<option value="Shcherbety">Щербеты</option>
+				<option value="Fruit ice">Фруктовый лед</option>
+				<option value="Melorin">Мелорин</option>
+			</select>
+		</form>
+
+		<form class="user" method="post" action="https://echo.htmlacademy.ru">
+			<fieldset>
+				<legend class="visually-hidden">Вход</legend>
+				<p>
+					<label for="user-login">Логин</label>
+					<input id="user-login" type="text" name="login" placeholder="Логин">
+				</p>
+				<p>
+					<label for="user-password">Пароль</label>
+					<input id="user-password" type="password" name="password" placeholder="Пароль"> 
+				</p>
+				
+				<button type="submit">Войти</button>
+				<a href="example.html">Забыли пароль?</a>
+				<a href="example.html">Новая регистрация</a>
+			</fieldset>
+		</form>
+
+		<form class="basket" action="https://echo.htmlacademy.ru" method="post">
+			<fieldset>
+				<legend class="visually-hidden">Список товаров</legend>
+				<output name="basket-orders"></output>
+			</fieldset>
+			<button type="submit" class="basket-button">Оформить заказ</button>
+		</form> 
+
+		<form class="search" action="https://echo.htmlacademy.ru" method="post">
+			<label for="search-form">Поиск</label> 
+			<input type="search-form"  placeholder="Что ищем?" name="search">
+		</form> 
   	</header>
   	<main class="container">
   		<h1 class="page-title">Сливочное мороженое</h1>
@@ -38,94 +75,166 @@
 	        <li><a href="#">Каталог</a></li>
 	        <li class="breadcrumbs-current">Сливочное</li>
     	 </ul>
-		<section class="filters">
-      		<h2 class="visually-hidden">Фильтр товаров</h2>
-        	<!-- Здесь будет форма -->
-      	</section>
+
+		<form class="filters" method="post" action="https://echo.htmlacademy.ru">
+			<fieldset>
+				<legend class="visually-hidden">Фильтры</legend>
+				<p>
+					<label for="filters-sort" name="" class="filters-sort">Сортировка</label>
+					<select id="filters-sort">
+						<option value="by popularity">по популярности</option>
+						<option value="first inexpensive">сначала недорогие</option>
+						<option value="first expensive">сначала дорогие</option>
+						<option value="by fat content">по жирности</option>
+					</select>
+				</p>
+				<p>	
+					<label for="filters-price">Цена:</label>
+					<output name="min">0</output>
+					<b>-</b>
+					<output name="max">1000</output>
+					<input type="range" id="filters-price" name="filters-price" min="0" max="1000" value="0">
+				</p>
+
+				<fieldset>
+					<legend>Жирность</legend>
+					<ul>
+						<li class="filters-fat">
+							<input id="filters-fat-0" type="radio" name="question-one" value="0%">
+							<label for="filters-fat-0">0%</label>
+						</li>
+						<li class="filters-fat">
+							<input type="radio" name="question-one" value="10%">
+							<label for="filters-fat-10">до 10%</label>
+						</li>
+						<li class="filters-fat">
+							<input type="radio" name="question-one" value="30%">
+							<label for="filters-fat-30">до 30%</label>
+						</li>
+						<li class="filters-fat">
+							<input type="radio" name="question-one" value=">30$">
+							<label for="filters-fat-100">выше 30%</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				 <fieldset>
+					<legend>Наполнители:</legend>
+					<ul>
+						<li class="filters-fillers">
+							<input class="filters-fillers-checkbox" type="checkbox" name="baxter-of-california"
+									id="filters-fillers-checkbox-chocolate" checked>
+							<label for="filters-fillers-checkbox-chocolate">шоколадные</label>
+						</li>
+						<li class="filter-fillers">
+							<input class="filters-fillers-checkbox" type="checkbox" name="mr-natty" 
+									id="filters-fillers-checkbox-sugar-powders" checked>
+							<label for="filters-fillers-checkbox-sugar-powders">сахарные присыпки</label>
+						</li>
+						<li class="filter-fillers">
+							<input class="filters-fillers-checkbox" type="checkbox" name="suavecito" 
+									id="filters-fillers-checkbox-fruit">
+							<label for="filters-fillers-checkbox-fruit">фрукты</label>
+						</li>
+						<li class="filter-fillers">
+							<input class="filters-fillers-checkbox" type="checkbox" name="malin-goetz" 
+									id="filters-fillers-checkbox-syrups">
+							<label for="filters-fillers-checkbox-syrups">сиропы</label>
+						</li>
+						<li class="filter-fillers">
+							<input class="filters-fillers-checkbox" type="checkbox" name="murrays" 
+									id="filter-fillers-checkbox-jams">
+							<label for="filter-fillers-checkbox-jams">джемы</label>
+						</li>	
+					</ul>
+				</fieldset>
+			</fieldset>
+			<button type="submit" class="filters-button">Применить</button>
+		</form>		
 
   		 <section class="catalog">
   		 	<h2 class="visually-hidden">Каталог мороженого</h2>
   			<ul>
 				<li>
-					<h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-					<b>310Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+						<b>310Р/кг</b>
 						<img src="img/ice_cream1.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочно-кофейное с кусочками шоколада</h3>
-					<b>380Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочно-кофейное с кусочками шоколада</h3>
+						<b>380Р/кг</b>
 						<img src="img/ice_cream2.jpg" width="267" height="267" alt=" ">
 					</a>
 				<li>
-					<h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-					<b>355Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+						<b>355Р/кг</b>
 						<img src="img/ice_cream3.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочное крем-брюле с карамельной подливкой</h3>
-					<b>415Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочное крем-брюле с карамельной подливкой</h3>
+						<b>415Р/кг</b>
 						<img src="img/ice_cream4.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочное с брусничным джемом</h3>
-					<b>325Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочное с брусничным джемом</h3>
+						<b>325Р/кг</b>
 						<img src="img/ice_cream5.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочно-черничное с цельными ягодами черники </h3>
-					<b>410Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочно-черничное с цельными ягодами черники </h3>
+						<b>410Р/кг</b>	
 						<img src="img/ice_cream6.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li> 
 				<li>
-					<h3>Сливочно-лимонное с карамельной присыпкой</h3>
-					<b>375Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочно-лимонное с карамельной присыпкой</h3>
+						<b>375Р/кг</b>
 						<img src="img/ice_cream7.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочное с шоколадной стружкой</h3>
-					<b>320Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочное с шоколадной стружкой</h3>
+						<b>320Р/кг</b>
 						<img src="img/ice_cream8.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочно-ванильное с кусочками шоколада</h3>
-					<b>440Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочно-ванильное с кусочками шоколада</h3>
+						<b>440Р/кг</b>
 						<img src="img/ice_cream9.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочноe с ментоловым сиропом</h3>
-					<b>435Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочноe с ментоловым сиропом</h3>
+						<b>435Р/кг</b>
 						<img src="img/ice_cream10.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li> 
 				<li>
-					<h3>Сливочное с кусочками черного шоколада</h3>
-					<b>355Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочное с кусочками черного шоколада</h3>
+						<b>355Р/кг</b>
 						<img src="img/ice_cream11.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
 				<li>
-					<h3>Сливочное с мятным сиропом</h3>
-					<b>420Р/кг</b>
 					<a href="catalog-item.html">
+						<h3>Сливочное с мятным сиропом</h3>
+						<b>420Р/кг</b>
 						<img src="img/ice_cream12.jpg" width="267" height="267" alt=" ">
 					</a>
 				</li>
