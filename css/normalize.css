@@ -87,19 +87,19 @@ ul {
 	background-image: url("../img/chocolates_for_free.jpg");
 }
 
-.product h2 {
+.catalog h3 {
 	font-weight: medium;
 	font-size: 16px;
 	line-height: 22px;
 }
 
-.product p {
+.catalog p {
 	font-weight: bold;
 	font-size: 45px;
 	line-height: 45px;
 }
 
-.product span {
+.catalog span {
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 45px;
@@ -165,4 +165,47 @@ ul {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 24px;
+}
+
+.question-legend {
+	color: #323232;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.footer-list a {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.footer-list-supplier a {
+	font-weight: bold;
+}
+
+.footer-copyright {
+	color: #fefefe;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.footer-copyright a {
+	color: #fefefe;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.breadcrumbs, .breadcrumbs a {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.catalog h3 {
+
 }
