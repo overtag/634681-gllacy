@@ -1,16 +1,16 @@
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
 
-  background-color: #849d8f;
-  background-position: top center;
-  background-repeat: no-repeat;
+	background-color: #849d8f;
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 
 a {
@@ -33,7 +33,7 @@ ul {
 
 .site-navigation,
 .user-navigation {
-  list-style: none;
+	list-style: none;
 }
 
 .site-navigation a,
@@ -45,7 +45,7 @@ ul {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color: #242424;
+	background-color: #242424;
 }
 
 .cover {
@@ -54,13 +54,13 @@ ul {
 }
 
 .cover h3 {
-	font-weight:bold;
+	font-weight: 700;
 	font-size: 60px;
 	line-height: 60px;
 }
 
 .action {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .action h2 {
@@ -80,32 +80,35 @@ ul {
 }
 
 .action-raspberry {
+	background-color: #ffffff;
 	background-image: url("../img/raspberry_for_free.jpg");
 }
 
 .action-chocolate {
+	background-color: #ffffff;
 	background-image: url("../img/chocolates_for_free.jpg");
 }
 
 .catalog h3 {
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
 }
 
 .catalog p {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 45px;
 	line-height: 45px;
 }
 
 .catalog span {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 30px;
 	line-height: 45px;
 }
 
 .company-info {
+	background-color: #ffffff;
 	background-image:  url("../img/wafer.png");
 	background-repeat: repeat;
 	border-radius: 15px;
@@ -113,27 +116,27 @@ ul {
 }
 
 .company-info h2 {
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 24px;
 	line-height: 30px;
 }
 
 .company-info p {
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 }
 
 .subscription h2 {
 	color: #323232;
-	font-weight: medium;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;	
 }
 
 .subscription a {
 	color: #323232;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 24px;
 	line-height: 30px;
 	text-decoration:  underline;
@@ -141,71 +144,67 @@ ul {
 
 .subscription p {
 	color: #5a5a5a;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 }
 
 .contacts-string-small {
 	color: #323232;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
 }
 
 .contacts-string-large {
 	color: #323232;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
 }
 
 .contacts a {
 	color: #ffffff;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
 }
 
 .question-legend {
 	color: #323232;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 24px;
 	line-height: 28px;
 }
 
 .footer-list a {
 	color: #ffffff;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
 }
 
 .footer-list-supplier a {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .footer-copyright {
 	color: #fefefe;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
 }
 
 .footer-copyright a {
 	color: #fefefe;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
 }
 
 .breadcrumbs, .breadcrumbs a {
 	color: #ffffff;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
-}
-
-.catalog h3 {
-
 }
