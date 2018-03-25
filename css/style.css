@@ -26,6 +26,7 @@ form, .header-menu-catalog-submenu {
 }
 
 .container {
+	
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -130,11 +131,7 @@ form, .header-menu-catalog-submenu {
 	background-image: url("../img/chocolates_for_free.jpg");
 }
 
-.catalog {
-	display: flex;
-	justify-content:space-between;
-	height: 400px;
-}
+
 .catalog h3 {
 	font-weight: 500;
 	font-size: 16px;
@@ -153,15 +150,33 @@ form, .header-menu-catalog-submenu {
 	line-height: 45px;
 }
 
+.catalog {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1146px;
+}
 .catalog-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+
+	
+}
+.catalog-item {
+	width: 267px;	
+	height: 345px;
 	margin: 0;
 	padding: 0;
 }
 
-.catalog-item {
-	background-color: #242424;
+.pagination-list {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+}
+
+.pagination-list li {
+	padding:  10px;
 }
 
 .company-info {
@@ -291,4 +306,16 @@ form, .header-menu-catalog-submenu {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
+}
+
+.main-footer .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;	
+}
+
+
+.breadcrumbs {
+	display: flex;
+	justify-content: 
 }
