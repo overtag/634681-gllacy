@@ -21,6 +21,23 @@ ul {
 	list-style: none;
 }
 
+form, .header-menu-catalog-submenu {
+	display: none;
+}
+
+.container {
+	width: 1146px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
 .visibility-hidden {
 	display: none;
 }
@@ -33,6 +50,8 @@ ul {
 
 .site-navigation,
 .user-navigation {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -48,18 +67,40 @@ ul {
 	background-color: #242424;
 }
 
-.cover {
+.cover, .cover-wrapper {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
 	list-style: none;
 	text-align: center;
+	height: 580px;
+}
+
+.cover-slide {
+	display:inline-block;
+	margin: 0;
+	padding: 0;
 }
 
 .cover h3 {
-	font-weight: 700;
+	position: absolute;
+	bottom: 250px;
+	z-index: 2;
 	font-size: 60px;
 	line-height: 60px;
+	vertical-align: bottom;
+}
+
+.cover-slide img {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	margin: auto;
 }
 
 .action {
+	display: flex;
+	justify-content: space-between;
 	font-weight: 700;
 }
 
@@ -89,6 +130,11 @@ ul {
 	background-image: url("../img/chocolates_for_free.jpg");
 }
 
+.catalog {
+	display: flex;
+	justify-content:space-between;
+	height: 400px;
+}
 .catalog h3 {
 	font-weight: 500;
 	font-size: 16px;
@@ -105,6 +151,17 @@ ul {
 	font-weight: 700;
 	font-size: 30px;
 	line-height: 45px;
+}
+
+.catalog-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-item {
+	background-color: #242424;
 }
 
 .company-info {
@@ -125,6 +182,18 @@ ul {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
+}
+
+.subscription {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.subscription-wrapper {
+	background-color: #ffffff;
+	width: 560px;
+	height: 220px;
 }
 
 .subscription h2 {
@@ -149,6 +218,21 @@ ul {
 	line-height: 22px;
 }
 
+.news {
+	width: 560px;
+	height: 220px;
+	background-color: #ffffff;
+	background-image: url("img/news.jpg");
+	background-repeat: no-repeat;
+}
+
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 1146px;
+	height: 440px;
+}
 .contacts-string-small {
 	color: #323232;
 	font-weight: 400;
