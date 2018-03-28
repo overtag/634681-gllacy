@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <img class='img-debug' src="img/debug.png">
+  
   <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -36,13 +36,13 @@
               </li>
 
               <li class="site-navigation-company">
-                <a href="">О Компании</a>
+                <a href="#">О Компании</a>
               </li>
             </ul>
 
             <ul class="user-navigation">
               <li class="user-navigation-search">
-                <a href="#"> <span class="visibility-hidden">Поиск</span></a>
+                <a class="user-navigation-search-link" href="#"> <span class="visibility-hidden">Поиск</span></a>
                 <form class="user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
                   <input type="search" id="search-string"  placeholder="Что ищем?" name="search">
@@ -50,31 +50,31 @@
               </li>
 
               <li class="user-navigation-login">
-              <a class="user-navigation-login-link" href="login.html">Вход</a>
+                <a class="user-navigation-login-link" href="login.html">Вход</a>
 
-              <form class="user-navigation-login-form" method="post" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                  <legend class="visibility-hidden">Вход</legend>
-                  <p>
-                    <label for="user-login">Логин</label>
-                    <input id="user-login" type="text" name="login" placeholder="Логин">
-                  </p>
-                  <p>
-                    <label for="user-password">Пароль</label>
-                    <input id="user-password" type="password" name="password" placeholder="Пароль">
-                  </p>
+                <form class="user-navigation-login-form" method="post" action="https://echo.htmlacademy.ru">
+                  <fieldset>
+                    <legend class="visibility-hidden">Вход</legend>
+                    <p>
+                      <label for="user-login">Логин</label>
+                      <input id="user-login" type="text" name="login" placeholder="Логин">
+                    </p>
+                    <p>
+                      <label for="user-password">Пароль</label>
+                      <input id="user-password" type="password" name="password" placeholder="Пароль">
+                    </p>
 
-                  <button type="submit">Войти</button>
-                  <a href="example.html">Забыли пароль?</a>
-                  <a href="example.html">Новая регистрация</a>
-                </fieldset>
-              </form>
+                    <button type="submit">Войти</button>
+                    <a href="example.html">Забыли пароль?</a>
+                    <a href="example.html">Новая регистрация</a>
+                  </fieldset>
+                </form>
               </li>
 
-              <li class="header-user-navigation-login-basket">
-                <a class="header-user-navigation-login-basket-link" href="login.html">Корзина</a>
+              <li class="user-navigation-basket">
+                <a class="user-navigation-basket-link" href="login.html">Корзина</a>
 
-              <form class="header-user-navigation-login-basket-form" action="https://echo.htmlacademy.ru" method="post">
+              <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset>
                   <legend class="visibility-hidden">Список товаров</legend>
                   <output name="basket-orders"></output>
