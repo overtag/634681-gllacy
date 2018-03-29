@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Gllasy Shop</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-   <img class="img-debug" src="img/debug.png">
+
   <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
@@ -42,9 +42,9 @@
 
             <ul class="user-navigation">
               <li class="user-navigation-search">
-                <a class="user-navigation-search-link" href="#"> <span class="visibility-hidden">Поиск</span></a>
+                <a class="user-navigation-search-link" href="#"> <span class="visually-hidden">Поиск</span></a>
                 <form class="user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
-                  <label for="search-string" class="visibility-hidden">Поиск по сайту</label>
+                  <label for="search-string" class="visually-hidden">Поиск по сайту</label>
                   <input type="search" id="search-string"  placeholder="Что ищем?" name="search">
                 </form>
               </li>
@@ -54,7 +54,7 @@
 
                 <form class="user-navigation-login-form" method="post" action="https://echo.htmlacademy.ru">
                   <fieldset>
-                    <legend class="visibility-hidden">Вход</legend>
+                    <legend class="visually-hidden">Вход</legend>
                     <p>
                       <label for="user-login">Логин</label>
                       <input id="user-login" type="text" name="login" placeholder="Логин">
@@ -76,7 +76,7 @@
 
               <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset>
-                  <legend class="visibility-hidden">Список товаров</legend>
+                  <legend class="visually-hidden">Список товаров</legend>
                   <output name="basket-orders"></output>
                 </fieldset>
                 <button type="submit" class="main-header-user-basket-button">Оформить заказ</button>
@@ -88,7 +88,7 @@
 
 
         <main class="main-container">
-          <h1 class="visibility-hidden">Магазин мороженого Gllacy</h1>
+          <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
 
           <div class="contacts-schedule-telephone">
             <p class="schedule">С 10 до 20, ежедневно</p>
@@ -145,7 +145,7 @@
           </section>
 
           <section class="catalog">
-            <h2 class="visibility-hidden">Витрина</h2>
+            <h2 class="visually-hidden">Витрина</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <img src="img/ice_cream1.jpg" width="267" height="267" alt=" ">
@@ -217,7 +217,7 @@
           <section class="subscription">
             <div class="subscription-wrapper-gradien">
               <div class="subscription-wrapper">
-                <h2 class="visibility-hidden">Подписка</h2>
+                <h2 class="visually-hidden">Подписка</h2>
 
                 <p>
                   Подпишитесь на нашу сладкую рассылку и будете всегда
@@ -225,7 +225,7 @@
                   Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
                 <form class="question" method="post" action="https://echo.htmlacademy.ru">
-                  <label for="question-email" class="visibility-hidden">Email</label>
+                  <label for="question-email" class="visually-hidden">Email</label>
                   <input type="email" id="question-email" name="question-email" required  placeholder="Ваша почта для ответа?">
 
                   <button type="submit" class="button">Оправить</button>
@@ -242,7 +242,7 @@
 
           <section class="contacts">
             <div class="contacts-info">
-              <h2 class="visibility-hidden">Контакты</h2>
+              <h2 class="visually-hidden">Контакты</h2>
               <p class="contacts-string-small">Адрес главного офиса и офлайн-магазина:</p>
               <p class="contacts-string-large">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
               <p class="contacts-string-small">Для заказов по телефону:</p>
@@ -256,13 +256,13 @@
           <form class="question" method="post" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend class="question-legend">Мы обязательно вам ответим!</legend>
-              <label for="question-name" class="visibility-hidden">Имя</label>
+              <label for="question-name" class="visually-hidden">Имя</label>
               <input type="text" id="question-name" name="question-name" placeholder="Как вас зовут?">
 
-              <label for="question-email" class="visibility-hidden">Email</label>
+              <label for="question-email" class="visually-hidden">Email</label>
               <input type="email" name="question-email" placeholder="Ваша почта для ответа?" required>
 
-              <label for="question-textarea" class="visibility-hidden">Текст вопроса</label>
+              <label for="question-textarea" class="visually-hidden">Текст вопроса</label>
               <textarea id="question-textarea" name="question-textarea" rows="6" placeholder="Напишите что-нибудь..."></textarea>
 
               <button type="submit" class="button">Оправить</button>
@@ -273,7 +273,7 @@
         <footer class="main-footer">
           <div class="container">
             <section class="footer-social">
-              <h2 class="visibility-hidden">Мы в соц. сетях</h2>
+              <h2 class="visually-hidden">Мы в соц. сетях</h2>
               <ul class= "social-list">
                 <li class= "social-item">
                    <a class="social-button" href="#" aria-label="Twitter">
@@ -313,7 +313,7 @@
             </div>
 
             <section class="footer-copyright">
-              <h2 class="visibility-hidden">Разработано</h2>
+              <h2 class="visually-hidden">Разработано</h2>
               <img src="img/logo-htmlacademy.svg" width="108" height="39" alt=" ">
               <p>Сделано в <a class="" href="https://htmlacademy.ru"> HTML Academy</a> © 2017</p>
              
