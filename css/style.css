@@ -108,6 +108,15 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.site-navigation-link:hover {
+  color: #333333;
+  background-color: #f7f6f3;
+  padding: 9px 12px;
+  margin:0;
+  border-radius: 50px;
+}
+
+
 
 .site-navigation-link {
   font-size: 16px;
@@ -118,7 +127,17 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
 }
 
-.site-navigation-link:hover {
+.site-navigation-link-red {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #d07058;
+  padding: 9px 12px;
+  margin:0;
+  border-radius: 50px;
+}
+
+[class^="site-navigation-link"]:hover {
   color: #333333;
   background-color: #f7f6f3;
   padding: 9px 12px;
@@ -126,7 +145,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
 }
 
-.site-navigation-link:active {
+[class^="site-navigation-link"]:active {
   color: #333333;
   background-color: #ededed;
   padding: 9px 12px;
@@ -179,10 +198,12 @@ input[type="radio"].visually-hidden {
 
 .catalog-submenu-link:hover {
   background-color: #fbded7;
+  color: #323232;
 }
 
 .catalog-submenu-link:active {
   background-color: #f6b5a5;
+  color: #323232;
 }
 
 /* user-navigation */
