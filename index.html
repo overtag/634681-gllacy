@@ -18,7 +18,7 @@
             <img src="img/logo.svg" width="154px" height="64px" alt="Логотип Gllasy">
           </a>
           <nav class="main-navigation">
-            <ul class="site-navigation">
+            <ul class="site-navigation visually-hidden">
              
               <li class="site-navigation-submenu">
                 <a href="#" class="site-navigation-catalog site-navigation-link">Каталог</a>
@@ -229,7 +229,7 @@
                 </p>
                 <form class="question" method="post" action="https://echo.htmlacademy.ru">
                   <label for="question-email" class="visually-hidden">Email</label>
-                  <input type="email" id="question-email" name="question-email" required  placeholder="Ваша почта для ответа?">
+                  <input class="question-email-input" type="email" id="question-email" name="question-email" required  placeholder="Ваша почта для ответа?">
 
                   <button type="submit" class="button">Оправить</button>
                 </form>
@@ -253,24 +253,30 @@
               <p class="contacts-string-time">(с 10 до 20 ежедневно)</p>
               <a class="button" href="news.html">Форма обратной связи</a>
             </div>
-
           </section>
 
-          <form class="questions" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="questions-fieldset">
-              <legend class="questions-legend">Мы обязательно вам ответим!</legend>
-              <label for="questions-name" class="visually-hidden">Имя</label>
-              <input class="questions-name-input questions-input" type="text" id="questions-name" name="questions-name" placeholder="Как вас зовут?">
+          <section class="feedback-container">
+            <h3 class="feedback-heading">Мы обязательно вам ответим!</h3>
+            <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
+                <input class="feedback-name-field" id="feedback-name" type="text" name="feedback-name" value="" placeholder="Как вас зовут?">
+              </p>
+              <p>
+                <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
+                <input class="feedback-email-field" id="feedback-email" type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа">
+              </p>
+              <p>
+                <label class="visually-hidden" for="feedback-wishes">Ваши пожелания</label>
+                <textarea  class="feedback-wishes-field" id="feedback-wishes" name="feedback-wishes" rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+              </p>
+              <div class="feedback-button-wrapper">
+                <button class="button" type="submit">Отправить</button>
+              </div>
+            </form>
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          </section>
 
-              <label for="questions-email" class="visually-hidden">Email</label>
-              <input class="questions-email-input questions-input" type="email" name="questions-email" placeholder="Ваша почта для ответа?" required>
-
-              <label for="questions-textarea" class="visually-hidden">Текст вопроса</label>
-              <textarea class="questions-textarea questions-input" id="questions-textarea" name="questions-textarea" rows="6" placeholder="Напишите что-нибудь..."></textarea>
-
-              <button type="submit" class="questions-submit button">Оправить</button>
-            </fieldset>
-          </form>
         </main>
 
         <footer class="main-footer">
@@ -318,7 +324,7 @@
             <section class="footer-copyright">
               <h2 class="visually-hidden">Разработано</h2>
               <img src="img/logo-htmlacademy.svg" width="108" height="39" alt=" ">
-              <p>Сделано в <a class="" href="https://htmlacademy.ru"> HTML Academy</a> © 2017</p>
+              <p>Сделано в <a class="footer-link" href="https://htmlacademy.ru"> HTML Academy</a> © 2017</p>
              
             </section>
           </div>
