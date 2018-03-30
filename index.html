@@ -256,19 +256,19 @@
 
           </section>
 
-          <form class="question" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <legend class="question-legend">Мы обязательно вам ответим!</legend>
-              <label for="question-name" class="visually-hidden">Имя</label>
-              <input type="text" id="question-name" name="question-name" placeholder="Как вас зовут?">
+          <form class="questions" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="questions-fieldset">
+              <legend class="questions-legend">Мы обязательно вам ответим!</legend>
+              <label for="questions-name" class="visually-hidden">Имя</label>
+              <input class="questions-name-input questions-input" type="text" id="questions-name" name="questions-name" placeholder="Как вас зовут?">
 
-              <label for="question-email" class="visually-hidden">Email</label>
-              <input type="email" name="question-email" placeholder="Ваша почта для ответа?" required>
+              <label for="questions-email" class="visually-hidden">Email</label>
+              <input class="questions-email-input questions-input" type="email" name="questions-email" placeholder="Ваша почта для ответа?" required>
 
-              <label for="question-textarea" class="visually-hidden">Текст вопроса</label>
-              <textarea id="question-textarea" name="question-textarea" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+              <label for="questions-textarea" class="visually-hidden">Текст вопроса</label>
+              <textarea class="questions-textarea questions-input" id="questions-textarea" name="questions-textarea" rows="6" placeholder="Напишите что-нибудь..."></textarea>
 
-              <button type="submit" class="button">Оправить</button>
+              <button type="submit" class="questions-submit button">Оправить</button>
             </fieldset>
           </form>
         </main>

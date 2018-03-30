@@ -354,8 +354,6 @@ input[type="radio"].visually-hidden {
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
-  visually: hidden;
 }
 
 .site-wrapper::before {
@@ -793,6 +791,66 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
 }
 
+
+/* form questions */
+.questions {
+  width: 480px;
+  height: 400px;
+  background: #f8f7f4;
+  border-radius: 10px;
+  position: fixed;
+  padding: 15px 0;
+  top: 10%;
+  left: 33%;
+  z-index: 10;
+}
+
+.questions-fieldset {
+  border: 0;
+}
+
+.questions-input {
+  color: #999;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.questions-legend {
+  display: block;
+  color: #323232;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.questions-name-input {
+  width: 256px;
+  height: 23px;
+}
+
+.questions-email-input {
+  width: 256px;
+  height: 23px;
+}
+
+.questions-textarea {
+  width:  430px;
+  height: 130px;
+}
+
+.questions-submit {
+  position: relative;
+  display: inline-block;
+  left: 314px;
+}
+
+/* news */
 .news {
   display: flex;
   flex-direction: column;
