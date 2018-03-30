@@ -10,78 +10,81 @@
   <body>
     
   <div class="container">
-    <header class="main-header">
-      <a class="main-header-logo">
-      <img src="img/logo.svg" width="154px" height="64px" alt="Логотип Gllasy">
-      </a>
-      <nav class="main-navigation">
-      <ul class="site-navigation">
-       
-        <li class="site-navigation-submenu">
-        <a href="#" class="header-menu-catalog">Каталог</a>
-        <ul class="header-menu-catalog-submenu">
-          <li><a href="#">Новинки</a></li>
-          <li><a href="catalog.html">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-        </ul>
-        </li>
+        <header class="main-header">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="154px" height="64px" alt="Логотип Gllasy">
+          </a>
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+             
+              <li class="site-navigation-submenu">
+                <a href="#" class="site-navigation-catalog site-navigation-link">Каталог</a>
+                <ul class="site-navigation-catalog-submenu">
+                  <li class="submenu-item-new"><a class="catalog-submenu-link" href="#">Новинки</a></li>
+                  <li><a class="catalog-submenu-link" href="catalog.html">Сливочное</a></li>
+                  <li><a class="catalog-submenu-link" href="#">Щербеты</a></li>
+                  <li><a class="catalog-submenu-link" href="#">Фруктовый лед</a></li>
+                  <li><a class="catalog-submenu-link" href="#">Мелорин</a></li>
+                </ul>
+              </li>
 
-        <li class="site-navigation-delivey">
-        <a href="#">Доставка и оплата</a>
-        </li>
+              <li class="site-navigation-delivey">
+                <a class="site-navigation-link" href="#">Доставка и оплата</a>
+              </li>
 
-        <li class="site-navigation-company">
-        <a href="#">О Компании</a>
-        </li>
-      </ul>
+              <li class="site-navigation-company">
+                <a class="site-navigation-link" href="#">О Компании</a>
+              </li>
+            </ul>
 
-      <ul class="user-navigation">
-        <li class="user-navigation-search">
-        <a class="user-navigation-search-link" href="#"> <span class="visually-hidden">Поиск</span></a>
-        <form class="user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search-string" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" id="search-string"  placeholder="Что ищем?" name="search">
-        </form>
-        </li>
+            <ul class="user-navigation">
+              <li class="user-navigation-search">
+                <a class="user-navigation-search-link user-navigation-link" href="#"> <span class="visually-hidden">Поиск</span></a>
 
-        <li class="user-navigation-login">
-        <a class="user-navigation-login-link" href="#">Вход</a>
+                <form class="user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
+                  <label for="search-string" class="visually-hidden">Поиск по сайту</label>
+                  <input class="user-navigation-search-string" type="search" id="search-string"  placeholder="Что ищем?" name="search">
+                </form>
+              </li>
 
-        <form class="user-navigation-login-form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset>
-          <legend class="visually-hidden">Вход</legend>
-          <p>
-            <label for="user-login">Логин</label>
-            <input id="user-login" type="text" name="login" placeholder="Логин">
-          </p>
-          <p>
-            <label for="user-password">Пароль</label>
-            <input id="user-password" type="password" name="password" placeholder="Пароль">
-          </p>
+              <li class="user-navigation-login">
+                <a class="user-navigation-login-link user-navigation-link" href="#">Вход</a>
 
-          <button type="submit">Войти</button>
-          <a href="example.html">Забыли пароль?</a>
-          <a href="example.html">Новая регистрация</a>
-          </fieldset>
-        </form>
-        </li>
+                <form class="user-navigation-login-form" method="post" action="https://echo.htmlacademy.ru">
+                  <fieldset class="user-navigation-login-fieldset">
+                    <legend class="visually-hidden">Вход</legend>
+                    <p>
+                      <label class="visually-hidden" for="user-login">Логин</label>
+                      <input class="user-navigation-login-input" id="user-login" type="text" name="login" placeholder="Логин">
+                    </p>
+                    <p>
+                      <label class="visually-hidden" for="user-password">Пароль</label>
+                      <input class="user-navigation-login-input" id="user-password" type="password" name="password" placeholder="Пароль">
+                    </p>
 
-        <li class="user-navigation-basket">
-        <a class="user-navigation-basket-link" href="#">Корзина</a>
+                    <button class="button" type="submit">Войти</button>
+                    <div class="form-login-link-wrapp">
+                      <a class="form-login-link" href="#">Новая регистрация</a>
+                      <a class="form-login-link" lhref="#">Забыли пароль?</a>
+                    </div>
+                  </fieldset>
+                </form>
+              </li>
 
-        <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="visually-hidden">Список товаров</legend>
-          <output name="basket-orders"></output>
-        </fieldset>
-        <button type="submit" class="main-header-user-basket-button">Оформить заказ</button>
-        </form>
-        </li>
-      </ul>
-      </nav>
-    </header>
+              <li class="user-navigation-basket">
+                <a class="user-navigation-basket-link user-navigation-link" href="#">Корзина</a>
+
+              <form class="user-navigation-basket-form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                  <legend class="visually-hidden">Список товаров</legend>
+                  <output name="basket-orders"></output>
+                </fieldset>
+                <button type="submit" class="main-header-user-basket-button">Оформить заказ</button>
+              </form>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
 
     <main class="main-container">
