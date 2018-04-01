@@ -576,22 +576,19 @@ input[type="radio"].visually-hidden {
 }
 
 
-.contacts-schedule-telephone, .contacts-schedule-telephone-catalog{
-    display: flex;
-    flex-direction: column;
-
-    justify-content: flex-start;  text-align: right;
-
-  z-index: 1;
-}
-
 .contacts-schedule-telephone {
-    display: flex;
-    flex-direction: column;
-    /* width: 500px; */
-    justify-content: flex-start;
-   margin: 0px 28px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: right;
+  z-index: 1;
+  margin: 0px 27px;
 }
+
+
 .schedule {
   font-size: 14px;
   line-height: 16px;
@@ -607,16 +604,17 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
+  display: flex;
   color: #ffffff;
   position: relative;
   padding-top: 315px;
   text-align: center;
- 
+  
   z-index: 0;
 }
 
 .slider-list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
@@ -629,8 +627,6 @@ input[type="radio"].visually-hidden {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
-
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -641,7 +637,8 @@ input[type="radio"].visually-hidden {
   font-size: 31px;
   line-height: 41px;
   padding: 12px 44px;
-   vertical-align: top;
+  vertical-align: top;
+  margin: 32px 0px 0px 5px;
 }
 
 .button {
@@ -733,7 +730,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   font-weight: 700;
   width: 1146px;
-  margin: 44px auto 0;
+  margin: 39px auto 0;
 }
 
 .button.link {
@@ -743,13 +740,13 @@ input[type="radio"].visually-hidden {
 }
 
 .action h2 {
-  margin: 20px;
+  margin: 15px 20px;
   font-size: 35px;
   line-height: 41px;
 }
 
 .action p {
-   margin: 20px;
+  margin: 17px 20px;
   font-size: 18px;
   line-height: 22px;
 }
@@ -830,7 +827,7 @@ input[type="radio"].visually-hidden {
 
   text-underline-position: under;
   position: absolute;
-  top: 264px;
+  top: 279px;
   max-width: 267px;
   font-weight: 500;
 
@@ -1396,9 +1393,15 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
+.section-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /* каталог */
 .breadcrums {
   display: flex;
+  flex-grow:1;
   justify-content: flex-start;
   margin: 28px 0 0 27px;
   padding: 0;
@@ -1430,12 +1433,11 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
-.catalog-title h2{
-
+.catalog-title h2 {
   font-size: 35px;
- 
+  text-align: left;
   line-height: 41px;
-   font-weight: 700;
+  font-weight: 700;
   margin: 0 27px;
 }
 
