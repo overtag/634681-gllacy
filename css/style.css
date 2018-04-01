@@ -489,6 +489,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
   font-size: 14px;
   line-height: 24px;
+  font-family: Roboto, "Arial", sans-serif;
   color: #999999;
   padding: 0 10px;
 }
@@ -520,6 +521,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-login-input {
+  font-family: Roboto, "Arial", sans-serif;
+  color: #999999;
   display: inline-block;;
   position: relative;
   width: 225px;
@@ -573,14 +576,22 @@ input[type="radio"].visually-hidden {
 }
 
 
-.contacts-schedule-telephone {
-  position: absolute;
-  text-align: right;
-  right: 27px;
-  top: 72px;
+.contacts-schedule-telephone, .contacts-schedule-telephone-catalog{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;  text-align: right;
+
   z-index: 1;
 }
 
+.contacts-schedule-telephone {
+    display: flex;
+    flex-direction: column;
+    /* width: 500px; */
+    justify-content: flex-start;
+   margin: 0px 28px;
+}
 .schedule {
   font-size: 14px;
   line-height: 16px;
@@ -1100,7 +1111,8 @@ input[type="radio"].visually-hidden {
   padding-bottom: 8px;
   margin: 0;
   margin-bottom: 20px;
-
+  font-family: Roboto, "Arial", sans-serif;
+  color: #999999;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
