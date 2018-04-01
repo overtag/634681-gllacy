@@ -814,15 +814,35 @@ input[type="radio"].visually-hidden {
   border-radius: 100% 100% 100% 100%;    
 }
 
-.catalog h3 {
+.catalog-title-link, .catalog-title-link:hover, .catalog-title-link:active {
+  text-decoration: underline;
+
+  text-underline-position: under;
   position: absolute;
   top: 264px;
   max-width: 267px;
   font-weight: 500;
-  color: #ffffff;
+
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  z-index: 10;
+}
+
+
+.catalog-title-link {
+  text-decoration-color: rgba(255,255,255, 0.2);
+  color: #ffffff;
+}
+
+.catalog-title-link:hover {
+  color: #fbded7;
+  text-decoration-color: rgba(249, 172, 159, 0.3);
+}
+
+.catalog-title-link:active {
+  color: #f6b5a5;
+  text-decoration-color: rgba(249, 172, 159, 0.3);
 }
 
 .catalog p {
