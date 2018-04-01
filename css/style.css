@@ -91,11 +91,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  width: 400px;
+  min-width: 412px;
   margin: 0;
-  padding: 0;
+  padding: 0px 13px;
 }
 
 .site-navigation-link:hover {
@@ -576,8 +576,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.contacts-schedule-telephone {
-  position: absolute;
+.contacts-schedule-telephone, .contacts-schedule-telephone-catalog {
   top: 0;
   right: 0;
   display: flex;
@@ -588,6 +587,13 @@ input[type="radio"].visually-hidden {
   margin: 0px 27px;
 }
 
+.contacts-schedule-telephone { 
+  position: absolute;
+}
+
+.contacts-schedule-telephone-catalog {
+  position: static;
+}
 
 .schedule {
   font-size: 14px;
@@ -730,7 +736,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   font-weight: 700;
   width: 1146px;
-  margin: 39px auto 0;
+  margin: 39px auto;
 }
 
 .button.link {
@@ -789,7 +795,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 267px;
   height: 322px;
-  margin: 18px 0;
+  margin: 0 0 41px 0;
   padding: 0;
 }
 
@@ -804,9 +810,9 @@ input[type="radio"].visually-hidden {
   background-color: rgba(248, 247, 244, 0.2);
  
   position: absolute;
-  left:-13px;
-  width: 293px;
-  height: 405px;
+  left: 6px;
+  width: 256px
+  height: 400px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -828,6 +834,8 @@ input[type="radio"].visually-hidden {
   text-underline-position: under;
   position: absolute;
   top: 279px;
+  left: 7px;
+  width: 252px;
   max-width: 267px;
   font-weight: 500;
 
@@ -885,7 +893,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
   align-items: center;
   width: 267px;
-  margin: 55px 21px 31px 0px;
+  margin: 38px 21px 32px 0px;;
   list-style: none;
 }
 
@@ -947,7 +955,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   width: 1146px;
   height: 306px;
-  margin: 21px auto 0;
+  margin: 0 auto;
   background-color: #ffffff;
   background-image: url(../img/wafer.png);
   background-repeat: repeat;
@@ -1171,7 +1179,7 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/news.jpg);
   background-repeat: no-repeat;
   border-radius: 15px;
-  padding: 25px 20px;
+  padding: 24px 20px;
 }
 
 .news h2 {
@@ -1403,7 +1411,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-grow:1;
   justify-content: flex-start;
-  margin: 28px 0 0 27px;
+  margin: 23px 0 0 27px;
   padding: 0;
   width: 320px;
   font-size: 14px;
