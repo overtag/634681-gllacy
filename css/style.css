@@ -59,7 +59,7 @@ input[type="radio"].visually-hidden {
 
 .container {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 2.3%;
   width: 1200px;
   position: relative;
 }
@@ -105,8 +105,6 @@ input[type="radio"].visually-hidden {
   margin:0;
   border-radius: 50px;
 }
-
-
 
 .site-navigation-link {
   font-size: 16px;
@@ -273,8 +271,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-/*  */
-
 .basket {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,8 +289,7 @@ input[type="radio"].visually-hidden {
   border-radius: 16px;
 
   -webkit-box-sizing: border-box;
-
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .basket .basket-icon {
