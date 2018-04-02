@@ -1237,7 +1237,7 @@ input[type="radio"].visually-hidden {
   color: #323232;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
   max-width: 250px;
   margin: 2px 30px;
 }
@@ -1253,8 +1253,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
-  margin: 27px 30px;
+  line-height: 20px;
+  margin: 23px 30px;
 }
 
 .question-legend {
@@ -1264,16 +1264,16 @@ input[type="radio"].visually-hidden {
   line-height: 28px;
 }
 
-.question-email-input{
-  margin: 0 23px;
-  width: 321px;
-  height: 40px;
+.question-email-input {
   border-radius: 5px;
   border: 0;
   line-height: 24px;
   font-size: 16px;
   font-weight: 400;
   padding: 0 12px;
+  margin: 29px 30px;
+  width: 321px;
+  height: 40px;
 }
 .main-footer {
 
