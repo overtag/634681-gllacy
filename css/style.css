@@ -804,14 +804,13 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-back {
-  position: relative;
   display: none;
   border-radius: 5px;
   background-color: rgba(248, 247, 244, 0.2);
  
   position: absolute;
-  left: 6px;
-  width: 256px
+  left: -12px;
+  width: 290px;
   height: 400px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   z-index: 10;
@@ -820,7 +819,7 @@ input[type="radio"].visually-hidden {
 .catalog-button {
   position: absolute;
   bottom: 17px;
-  left: 40px;
+  left: 38px;
 }
 
 .catalog-item img {
