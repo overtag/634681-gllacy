@@ -779,6 +779,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.catalog-item-hit {
+  position: absolute;
+  top: 0;
+}
+
 .catalog-item:hover .catalog-back {
   display: block; 
 }
@@ -802,7 +807,7 @@ input[type="radio"].visually-hidden {
   left: 38px;
 }
 
-.catalog-item img {
+.catalog-item img:first-child {
   width: 267px;
   height: 267px;
   position: relative;
