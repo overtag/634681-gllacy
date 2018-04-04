@@ -7,13 +7,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    
     <div class="site-wrapper">
       <div class="container">
-       <img src="debug1.png" style="position: absolute; z-index: 0;">
-
         <header class="main-header">
           <a class="main-header-logo">
             <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllasy">
@@ -22,14 +21,16 @@
             <ul class="site-navigation">
              
               <li class="site-navigation-submenu">
-                <a href="#" class="site-navigation-catalog site-navigation-link">Каталог</a>
+                <a href="#" class="site-navigation-link">Каталог</a>
+                <div>
                 <ul class="site-navigation-catalog-submenu">
-                  <li class="submenu-item-new"><a class="catalog-submenu-link" href="#">Новинки</a></li>
+                  <li class="submenu-item-new"><a  href="#">Новинки</a></li>
                   <li><a class="catalog-submenu-link" href="catalog.html">Сливочное</a></li>
                   <li><a class="catalog-submenu-link" href="#">Щербеты</a></li>
                   <li><a class="catalog-submenu-link" href="#">Фруктовый лед</a></li>
                   <li><a class="catalog-submenu-link" href="#">Мелорин</a></li>
                 </ul>
+                 <div>
               </li>
 
               <li class="site-navigation-delivey">
@@ -68,8 +69,8 @@
 
                     <button class="button" type="submit">Войти</button>
                     <div class="form-login-link-wrapp">
-                      <a class="form-login-link" href="#">Новая регистрация</a>
                       <a class="form-login-link" href="#">Забыли пароль?</a>
+                      <a class="form-login-link" href="#">Новая регистрация</a>
                     </div>
                   </fieldset>
                 </form>
@@ -89,7 +90,6 @@
             </ul>
           </nav>
         </header>
-
 
         <main class="main-container">
           <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
@@ -254,8 +254,10 @@
           </section>
 
           <section class="contacts">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522449715020" width="1200" height="430" style="border:0" allowfullscreen></iframe>
-
+            <div class="maps">
+              <img class="map-img" src="img/map.png" width="1200" height="430" alt="Логотип Gllasy">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522449715020" width="1200" height="430" style="border:0" allowfullscreen></iframe>
+            </div>
             <div class="contacts-info">
               <h2 class="visually-hidden">Контакты</h2>
               <p class="contacts-string-small">Адрес главного офиса и офлайн-магазина:</p>
@@ -339,11 +341,9 @@
               <p>Сделано в <a class="footer-link" href="https://htmlacademy.ru"> HTML Academy</a> © 2017</p>
              
             </section>
-   
         </footer>
+        
       </div>
     </div>
-    <script src="js/script.js"></script>
-  </body>
-  
+  </body>  
 </html>
