@@ -562,7 +562,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.contacts-schedule-telephone, .contacts-schedule-telephone-catalog {
+.contacts-schedule-telephone  {
   top: 0;
   right: 0;
   display: flex;
@@ -570,14 +570,6 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   text-align: right;
   z-index: 1;
-}
-
-.contacts-schedule-telephone { 
-  position: absolute;
-}
-
-.contacts-schedule-telephone-catalog {
-  position: static;
 }
 
 .schedule {
@@ -598,7 +590,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   color: #ffffff;
   position: relative;
-  padding-top: 315px;
+  padding: 0;
+  margin: 270px auto 0;
   text-align: center;
   
   z-index: 0;
