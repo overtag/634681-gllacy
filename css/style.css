@@ -1519,12 +1519,11 @@ img {
 }
 
 .filters {
-  margin: 30px 0 42px;
+  margin: 30px 0 25px;
   padding: 0 2.3%;
 }
 
 .filters-form {
-  align-content: space-between;
   color: #ffffff;
   display: flex;
   flex-flow: row wrap;
@@ -1536,7 +1535,7 @@ img {
 }
 
 .filter-item {
-  margin: 0 8px 0 0;
+  margin: 0 8px 16px 0;
   padding: 0;
   border: 0;
 }
@@ -1728,7 +1727,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  margin: 0 4px;
+  margin: 0 4px 16px;
   height: 35px;
   text-align: center;
   vertical-align: middle;
