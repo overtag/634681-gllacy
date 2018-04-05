@@ -7,6 +7,8 @@
   <link href="css/style.css" rel="stylesheet">
   </head>
   <body> 
+      <div style="position: absolute; width: 100%; display: none; z-index: 50; opacity: 0.3;">
+    <img style="margin:0 auto;" src="debug2.jpg" width="1200"></div>
     <div class="site-wrapper">
 
         <header class="main-header">
@@ -169,28 +171,28 @@
               <fieldset class="filter-item">
                 <legend class="filter-caption filter-caption-fatty">Жирность:</legend>
                 <div class="fatty-inner filter-item-inner">
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-0" type="radio" value="0%">
+                  <input class="filter-toggle" name="fatty-toggle" id="fatty-0" type="radio" value="0%">
                   <label for="fatty-0">0%</label>
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-less10" type="radio" value="less10%" checked>
+                  <input class="filter-toggle" name="fatty-toggle" id="fatty-less10" type="radio" value="less10%" checked>
                   <label for="fatty-less10">до 10%</label>
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
+                  <input class="filter-toggle" name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
                   <label for="fatty-less30">до 30%</label>
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
+                  <input class="filter-toggle" name="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
                   <label for="fatty-more30">выше 30%</label>
                 </div>
               </fieldset>
               <fieldset class="filter-item">
                 <legend class="filter-caption">Наполнители:</legend>
                 <div class="filler-inner filter-item-inner">
-                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler-chocolate" id="fillers-chocolate" checked>
+                  <input class="filter-checkbox" type="checkbox" name="filler-chocolate" id="fillers-chocolate" checked>
                   <label for="fillers-chocolate">шоколадные</label>
-                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler-sugar" id="fillers-sugar" checked>
+                  <input class="filter-checkbox" type="checkbox" name="filler-sugar" id="fillers-sugar" checked>
                   <label for="fillers-sugar">сахарные присыпки</label>
-                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler-fruits" id="fillers-fruits">
+                  <input class="filter-checkbox" type="checkbox" name="filler-fruits" id="fillers-fruits">
                   <label for="fillers-fruits">фрукты</label>
-                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler-syrup" id="fillers-syrup">
+                  <input class="filter-checkbox" type="checkbox" name="filler-syrup" id="fillers-syrup">
                   <label for="fillers-syrup">сиропы</label>
-                  <input class="visually-hidden filter-checkbox" type="checkbox" name="filler-jam" id="fillers-jam">
+                  <input class="filter-checkbox" type="checkbox" name="filler-jam" id="fillers-jam">
                   <label for="fillers-jam">джемы</label>
                 </div>
               </fieldset>
