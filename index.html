@@ -11,6 +11,10 @@
     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 
+    <div style="position: absolute; width: 100%; display: flex; z-index: 0; opacity: 0.2">
+      <img style="margin:0 auto;" src="debug1-search.png" width="1200"></div>
+
+
     <div class="site-wrapper">
       <div class="container">
         <header class="main-header">
@@ -47,7 +51,7 @@
 
                 <form class="user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label for="search-string" class="visually-hidden">Поиск по сайту</label>
-                  <input class="user-navigation-search-string" type="search" id="search-string"  placeholder="Что ищем?" name="search">
+                  <input class="user-navigation-search-string input-text" type="search" id="search-string"  placeholder="Что ищем?" name="search">
                 </form>
               </li>
 
@@ -59,11 +63,11 @@
                     <legend class="visually-hidden">Вход</legend>
                     <p>
                       <label class="visually-hidden" for="user-login" >Электронная почта</label>
-                      <input class="user-navigation-login-input" id="user-login" type="text" name="login" placeholder="Логин" required>
+                      <input class="user-navigation-login-input input-text" id="user-login" type="text" name="login" placeholder="Электронная почта" required>
                     </p>
                     <p>
                       <label class="visually-hidden" for="user-password">Пароль</label>
-                      <input class="user-navigation-login-input" id="user-password" type="password" name="password" placeholder="Пароль" required>
+                      <input class="user-navigation-login-input input-text" id="user-password" type="password" name="password" placeholder="Пароль" required>
                     </p>
 
                     <button class="button" type="submit">Войти</button>
@@ -275,15 +279,15 @@
             <form class="feedback-form" action="http://echo.htmlacademy.ru" method="post">
               <p>
                 <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-                <input class="feedback-name-field" id="feedback-name" type="text" name="feedback-name" value="" placeholder="Как вас зовут?" required>
+                <input class="feedback-name-field input-text" id="feedback-name" type="text" name="feedback-name" value="" placeholder="Как вас зовут?" required>
               </p>
               <p>
                 <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
-                <input class="feedback-email-field" id="feedback-email" type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа" required>
+                <input class="feedback-email-field input-text" id="feedback-email" type="email" name="feedback-email" value="" placeholder="Ваша почта для ответа" required>
               </p>
               <p>
                 <label class="visually-hidden" for="feedback-wishes">Ваши пожелания</label>
-                <textarea  class="feedback-wishes-field" id="feedback-wishes" name="feedback-wishes" rows="6" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
+                <textarea  class="feedback-wishes-field input-text" id="feedback-wishes" name="feedback-wishes" rows="6" cols="40" placeholder="Напишите что-нибудь..." required></textarea>
               </p>
               <div class="feedback-button-wrapper">
                 <button class="button" type="submit">Отправить</button>
@@ -294,8 +298,7 @@
 
         </main>
 
-        <footer class="main-footer">
-        
+        <footer class="main-footer">       
             <section class="footer-social">
               <h2 class="visually-hidden">Мы в соц. сетях</h2>
               <ul class= "social-list">

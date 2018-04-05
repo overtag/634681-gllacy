@@ -6,7 +6,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   </head>
- 
+  
+   <div style="position: absolute; width: 100%; display: flex;">
+    <img style="margin:0 auto;" src="debug2.jpg" width="1200"></div>
+
   <body> 
     <div class="site-wrapper">
       <div class="container">
@@ -18,16 +21,17 @@
             <ul class="site-navigation">
              
               <li class="site-navigation-submenu">
-                <a href="#" class="site-navigation-link-red site-navigation-catalog">Каталог</a>
-                <ul class="site-navigation-catalog-submenu">
-                  <li class="submenu-item-new"><a class="catalog-submenu-link" href="#">Новинки</a></li>
-                  <li><a class="catalog-submenu-link" href="#">Сливочное</a></li>
-                  <li><a class="catalog-submenu-link" href="#">Щербеты</a></li>
-                  <li><a class="catalog-submenu-link" href="#">Фруктовый лед</a></li>
-                  <li><a class="catalog-submenu-link" href="#">Мелорин</a></li>
-                </ul>
-              </li>
-
+                <a href="#" class="site-navigation-link-red site-navigation-link">Каталог</a>
+                <div>
+                  <ul class="site-navigation-catalog-submenu">
+                    <li class="submenu-item-new"><a  href="#">Новинки</a></li>
+                    <li><a class="catalog-submenu-link" href="catalog.html">Сливочное</a></li>
+                    <li><a class="catalog-submenu-link" href="#">Щербеты</a></li>
+                    <li><a class="catalog-submenu-link" href="#">Фруктовый лед</a></li>
+                    <li><a class="catalog-submenu-link" href="#">Мелорин</a></li>
+                  </ul>
+                </div>
+              </li>  
               <li class="site-navigation-delivey">
                 <a class="site-navigation-link" href="#">Доставка и оплата</a>
               </li>
@@ -43,7 +47,7 @@
 
                 <form class="user-navigation-search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label for="search-string" class="visually-hidden">Поиск по сайту</label>
-                  <input class="user-navigation-search-string" type="search" id="search-string"  placeholder="Что ищем?" name="search">
+                  <input class="user-navigation-search-string input-text" type="search" id="search-string"  placeholder="Что ищем?" name="search">
                 </form>
               </li>
 
@@ -55,17 +59,17 @@
                     <legend class="visually-hidden">Вход</legend>
                     <p>
                       <label class="visually-hidden" for="user-login" >Электронная почта</label>
-                      <input class="user-navigation-login-input" id="user-login" type="text" name="login" placeholder="Логин" required>
+                      <input class="user-navigation-login-input input-text" id="user-login" type="text" name="login" placeholder="Электронная почта" required>
                     </p>
                     <p>
-                      <label class="visually-hidden" for="user-password" >Пароль</label>
-                      <input class="user-navigation-login-input" id="user-password" type="password" name="password" placeholder="Пароль" required>
+                      <label class="visually-hidden" for="user-password">Пароль</label>
+                      <input class="user-navigation-login-input input-text" id="user-password" type="password" name="password" placeholder="Пароль" required>
                     </p>
 
                     <button class="button" type="submit">Войти</button>
                     <div class="form-login-link-wrapp">
-                      <a class="form-login-link" href="#">Новая регистрация</a>
                       <a class="form-login-link" href="#">Забыли пароль?</a>
+                      <a class="form-login-link" href="#">Новая регистрация</a>
                     </div>
                   </fieldset>
                 </form>
@@ -169,13 +173,13 @@
               <fieldset class="filter-item">
                 <legend class="filter-caption">Жирность:</legend>
                 <div class="fatty-inner filter-item-inner">
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle-0" id="fatty-0" type="radio" value="0%">
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-0" type="radio" value="0%">
                   <label for="fatty-0">0%</label>
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle-10" id="fatty-less10" type="radio" value="less10%" checked>
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-less10" type="radio" value="less10%" checked>
                   <label for="fatty-less10">до 10%</label>
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle-30" id="fatty-less30" type="radio" value="less30%">
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-less30" type="radio" value="less30%">
                   <label for="fatty-less30">до 30%</label>
-                  <input class="visually-hidden filter-toggle" name="fatty-toggle-100" id="fatty-more30" type="radio" value="more30%">
+                  <input class="visually-hidden filter-toggle" name="fatty-toggle" id="fatty-more30" type="radio" value="more30%">
                   <label for="fatty-more30">выше 30%</label>
                 </div>
               </fieldset>
