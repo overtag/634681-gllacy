@@ -995,7 +995,7 @@ img {
   display: flex;
   flex-direction: column;
   margin: 0 2.3%;
-  max-width: 1145px;
+  width: 1145px;
   min-height: 306px;
 }
 
