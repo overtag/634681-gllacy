@@ -1227,11 +1227,6 @@ img {
   position: relative;
 }
 
-.maps {
-  position: relative;
-  z-index: 0;
-}
-
 .maps iframe {
   position: absolute;
   top: 0;
