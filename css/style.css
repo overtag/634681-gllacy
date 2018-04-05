@@ -83,9 +83,7 @@ img {
   padding: 7px 14px;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
@@ -809,6 +807,7 @@ input[type="radio"].visually-hidden {
 .catalog-decor {
   border-bottom: 1px solid rgba(255,255,255, 0.3);
 }
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -827,9 +826,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.catalog-item-hit {
+.catalog-item::before {
+  background-image: url("../img/hit.svg");
+  content: "";
+  height: 61px;
   position: absolute;
   top: 0;
+  width: 61px;
+  z-index: 2;
 }
 
 .catalog-item:hover .catalog-back {
