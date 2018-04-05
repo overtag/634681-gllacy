@@ -1659,15 +1659,24 @@ img {
   margin: 0 11px 5px 19px;
 }
 
-
 .fatty-inner,
 .filler-inner {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
   width: 415px;
-  padding: 0 15px 0 20px;
+}
+
+.fatty-inner label {
+  margin: 0 3px 0 19px;
+  padding: 0 0 0 28px;
+}
+
+.filler-inner label {
+  margin: 0 6px 0 19px;
+  padding: 0 0 0 28px;
 }
 
 .filter-toggle + label::before,
@@ -1676,11 +1685,11 @@ img {
 .filter-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  left: -5px;
+  left: -7px;
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 2px 0;
   opacity: 0.8;
 }
 
@@ -1711,10 +1720,10 @@ img {
 }
 
 .filler-inner {
+  margin: 0;
+  padding: 0;
   position: relative;
   width: 703px;
-  margin: 0;
-  padding: 1px 20px 0px 20px;
 }
 
 .filter-button {
