@@ -826,7 +826,7 @@ img {
   padding: 0;
 }
 
-.catalog-item::before {
+.item-hit::before {
   background-image: url("../img/hit.svg");
   content: "";
   height: 61px;
@@ -1561,7 +1561,7 @@ img {
   min-height: 37px;
   padding: 0 13px;
   width: 195px;
-  appearance: none;
+  border: 0;
   -moz-appearance:none; /* Firefox */
   -webkit-appearance:none; /* Safari and Chrome */
 }
