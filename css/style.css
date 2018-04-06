@@ -1776,11 +1776,9 @@ img {
   background-color: #ededed;
 }
 
-
 .modal-show {
-  display: block;
-  
   animation: bounce 0.6s;
+  display: block;
 }
 
 @keyframes bounce {
