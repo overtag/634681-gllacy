@@ -165,7 +165,7 @@ img {
   line-height: 18px;
   color: #ffffff;
   background-color: #d07058;
-  padding: 4px 14px 7px;
+  padding: 4px 14px 6px;
   margin: 0;
   border-radius: 50px;
 }
@@ -173,7 +173,7 @@ img {
 [class^="site-navigation-link"]:hover {
   color: #333333;
   background-color: #f7f6f3;
-  padding: 4px 14px 7px;
+  padding: 4px 14px 6px;
   margin: 0;
   border-radius: 50px;
 }
@@ -181,7 +181,7 @@ img {
 [class^="site-navigation-link"]:active {
   color: #333333;
   background-color: #ededed;
-  padding: 4px 14px 7px;
+  padding: 4px 14px 6px;
   margin:0;
   border-radius: 50px;
 }
