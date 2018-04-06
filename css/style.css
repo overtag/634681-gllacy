@@ -1609,6 +1609,10 @@ img {
   -moz-appearance: none;
 }
 
+.sorting-select::-ms-expand {
+ display: none;
+}
+
 .sorting-select:hover {
   background-repeat: no-repeat;
   background-image: url('../img/select-arrow-black.svg');
