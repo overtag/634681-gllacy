@@ -173,7 +173,7 @@ img {
 [class^="site-navigation-link"]:hover {
   color: #333333;
   background-color: #f7f6f3;
-  padding: 4px 14px;
+  padding: 4px 14px 7px;
   margin: 0;
   border-radius: 50px;
 }
@@ -181,7 +181,7 @@ img {
 [class^="site-navigation-link"]:active {
   color: #333333;
   background-color: #ededed;
-  padding: 4px 14px;
+  padding: 4px 14px 7px;
   margin:0;
   border-radius: 50px;
 }
@@ -1231,7 +1231,6 @@ img {
 }
 
 .news a {
-  width: 300px;
   color: #323232;
   font-weight: 700;
   font-size: 24px;
@@ -1239,6 +1238,7 @@ img {
   text-decoration: underline;
   margin: 4px 0;
   padding: 0;
+  width: 300px;
 }
 
 .contacts {
