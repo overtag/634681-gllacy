@@ -756,7 +756,7 @@ img {
   display: flex;
   justify-content: space-between;
   font-weight: 700;
-  margin: 40px auto;
+  margin: 39px auto 41px;
   padding: 0 2.3%;
   width: 100%;
 }
@@ -1203,7 +1203,7 @@ img {
   background-image: url(../img/news.jpg);
   background-repeat: no-repeat;
   border-radius: 15px;
-  padding: 22px 19px;
+  padding: 23px 19px;
 }
 
 .news h2 {
