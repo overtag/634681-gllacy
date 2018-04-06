@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Gllasy Shop</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -173,8 +174,12 @@
               <div class="price-filter-inner filter-item-inner">
                 <div class="filter-line">
                   <div class="filter-active-line"></div>
-                  <div class="filter-ring ring-min"></div>
-                  <div class="filter-ring ring-max"></div>
+                  <div class="filter-ring ring-min">
+                    <span class="visually-hidden"> Минимальная величина<span>
+                  </div>
+                  <div class="filter-ring ring-max">
+                    <span class="visually-hidden"> Максимальная величина<span>
+                  </div>
                   <div class="price-filter-counter visually-hidden">
                     <label for="price-filter-min"></label>
                     <input id="price-filter-min" name="price-filter-min" type="number" placeholder="0">
