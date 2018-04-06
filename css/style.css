@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -148,6 +149,7 @@ img {
 .site-navigation-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -160,6 +162,7 @@ img {
   background-color: #d07058;
   border-radius: 50px;
   color: #ffffff;
+  cursor: pointer;
   font-size: 16px;
   line-height: 18px;
   margin: 0;
@@ -217,6 +220,7 @@ img {
 .catalog-submenu-link {
   border-radius: 0;
   color: #323232;
+  cursor: pointer;
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -255,6 +259,7 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   color: #ffffff;
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   position: relative;
@@ -548,6 +553,7 @@ img {
 .form-login-link {
   border-bottom: 1px solid  rgba(0, 0, 0, 0.2);
   color: #323232;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -761,6 +767,7 @@ img {
 
 .button.link {
   bottom: 26px;
+  cursor: pointer;
   position: absolute;
   right: 21px;
 }
@@ -874,6 +881,7 @@ img {
 }
 
 .catalog-title-link, .catalog-title-link:hover, .catalog-title-link:active {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   left: 7px;
@@ -1122,14 +1130,12 @@ img {
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   color: #323232;
   display: none;
-  left: 50%;
+  flex-direction: column;
+  margin: 0 361px;
   min-width: 477px;
   padding: 17px 24px;
   position: fixed;
   top: 10%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   z-index: 50;
 }
 
@@ -1383,7 +1389,7 @@ img {
 }
 
 .social-item a {
-  text-decoration: none;;
+  text-decoration: none;
 }
 
 .social-item svg {
@@ -1427,6 +1433,7 @@ img {
 .footer-link {
   border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
   color: #ffffff;
+  cursor: pointer;
   font-family: Roboto, "Arial", sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -1461,6 +1468,7 @@ img {
 .footer-copyright .footer-link {
   border-bottom: 1px solid #a9bbb1;
   color: #fefefe;
+  cursor: pointer;
   font-family: Roboto, "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -1717,7 +1725,7 @@ img {
   content: "";
   height: 25px;
   left: -7px;
-  opacity: 0.8;
+  opacity: 0.7;
   position: absolute;
   width: 25px;
 }
@@ -1788,7 +1796,7 @@ img {
 
 .modal-show {
   animation: bounce 0.6s;
-  display: block;
+  display: flex;
 }
 
 @keyframes bounce {
