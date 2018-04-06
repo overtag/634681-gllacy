@@ -1595,9 +1595,9 @@ img {
 }
 
 .sorting-select {
-  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   background-repeat: no-repeat;
   background-image: url('../img/select-arrow.svg');
   background-size: 13px 12px;
@@ -1610,6 +1610,9 @@ img {
 }
 
 .sorting-select:hover {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-repeat: no-repeat;
   background-image: url('../img/select-arrow-black.svg');
   background-size: 13px 12px;
@@ -1617,9 +1620,8 @@ img {
   color: #323232;
   margin: 0;
   min-height: 37px;
-  padding: 0 15px;
+  padding: 6px 13px;
   width: 195px;
-  -webkit-appearance: none;
 }
 
 .sorting-option {
@@ -1770,6 +1772,7 @@ img {
   border: 2px solid #ffffff;
   border-radius: 50px;
   color: #ffffff;
+  cursor: pointer;
   font-family: Roboto, "Arial", sans-serif;font: inherit;
   font-size: 16px;
   font-weight: 500;
