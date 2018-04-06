@@ -912,13 +912,28 @@ img {
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
+  white-space: nowrap;
+}
+
+.catalog p::before {
+  background-image: url('../img/ruble.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  content: "";
+  height: 34px;
+  left: 81px;
+  position: absolute;
+  top: 9px;
+  width: 30px;
 }
 
 .catalog span {
   position: absolute;
   font-weight: 700;
   font-size: 30px;
-  line-height: 45px;
+  line-height: 60px;
+  margin: 0 0 0 35px;
+  white-space: nowrap;
 }
 
 /* pagination */
